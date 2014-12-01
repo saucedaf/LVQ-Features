@@ -5,7 +5,7 @@ library(mlbench)
 library(caret)
 # load the dataset
 Churndata=read.csv('path',stringsAsFactors=FALSE)
-myvars = names(Churndata) %in% c("Customer", "MRR", "Created.On","Total","NPS.Detractor") 
+myvars = names(Churndata) %in% c("columsn", "to", "remove") 
 Churndata_final = Churndata[!myvars]
 str(Churndata_final)
 Churndata_final$Cancelled = as.factor(ifelse(Churndata_final$Cancelled=='Not Cancelled',0,1))
